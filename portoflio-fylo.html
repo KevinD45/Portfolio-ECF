@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/desktop/logo/logo-black.svg" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio-detail.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+
+    <!-- 
+    c/c autre page-->
+
+<!-- ********** HEADER + NAV ********** -->
+
+    <header class="container">
+        <div class="main-header">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><img src="img/desktop/logo/logo-black.svg" alt="Logo du site en noir"></a>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <button class="main-nav__toggler" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                    <span class="main-nav__bar"></span>
+                    <span class="main-nav__bar"></span>
+                    <span class="main-nav__bar"></span>
+                </button>
+                <ul class="main-nav__list" id="menu" hidden>
+                    <li class="main-nav__item"><a href="index.html" class="main-nav__link">HOME</a></li>
+                    <li class="main-nav__item item-style-active"><a href="portfolio-home.html" class="main-nav__link">PORTFOLIO</a></li>
+                    <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="img-hero">
+            <figure>
+                <img class="hero-deskop" src="img/desktop/portfolio-fylo/hero/Porto 1.png" srcset="img/desktop/portfolio-fylo/hero/Porto 1@2x.png 2x" alt="Page d'accueil du site Bookmark" loading="lazy" >
+            </figure>
+        </div>
+    </header>
+
+<!-- ********** PRINCIPAL CONTENT ********** -->
+
+    <main>
+        <section class="main-section-portfolio container">
+            <div class="first-content-portfolio">
+                <div class="first-text-content">
+                    <div>
+                        <h2>Fylo</h2>
+                    </div>
+                    <div>
+                        <p>
+                            This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <ul class="list-content">
+                        <li>
+                            <a class="item-content" href="#">Interaction Design / Front End Development</a>
+                        </li>
+                        <li>
+                            <a class="item-content" href="#">HTML / CSS / JS</a>
+                        </li>
+                        <li>
+                            <a href="fylo-example.html" class="btn-secondary">VISIT WEBSITE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="second-content-portfolio">
+                <div class="second-content-text">
+                    <h3>Project Background</h3>
+                    <p>
+                        This project was a front-end challenge from <a href="https://www.cefim.eu/" target="_blank">CEFIM BootCamp</a>. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
+                    </p>
+                </div>
+                <div class="second-content-img">
+                    <h3>Static Previews</h3>
+                    <figure>
+                        <img class="first-img-second-content" src="img/desktop/portfolio-fylo/img1/Bitmap.png" srcset="img/desktop/portfolio-fylo/img1/Bitmap@2x.png 2x" alt="Page d'accueil du site Bookmark" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img class="second-img-second-content" src="img/desktop/portfolio-fylo/img2/Bitmap Copy.png" srcset="img/desktop/portfolio-fylo/img2/Bitmap Copy@2x.png 2x" alt="Une page web du site Bookmark" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+<!-- ********** SECTION ARROW ********** -->
+
+        <aside>
+            <div class="main-arrow container">
+                <div class="arrow-content">
+                    <div class="arrow-content-txt-first">
+                        <a href="portfolio-insure.html">Insure</a> <br>
+                        <a href="portfolio-insure.html">Previous Project</a>
+                    </div>           
+                </div>
+                <div class="arrow-content">   
+                    <div class="arrow-content-txt-second">
+                        <a href="portfolio-manage.html">Manage</a> <br>
+                        <a href="portfolio-manage.html">Next Project</a>
+                    </div>            
+                </div>
+            </div>
+        </aside>
+
+<!-- ********** SECTION "CONTACT" ********** -->
+
+        <section class="main-contact container">
+            <div>
+                <p>
+                    Interested in doing a project together?
+                </p>
+            </div>
+            <div class="contact-item-line"></div>
+            <a href="contact-me.html" class="btn-secondary btn-home">CONTACT ME</a>
+        </section>
+    </main>
+
+<!-- ********** FOOTER ********** -->
+
+    <footer class="main-footer container">
+        <div class="footer-item-list">
+            <a href="index.html"><img src="img/desktop/logo/logo-white.svg" alt="Logo du site en blanc"></a>
+            <ul class="footer-item-nav">
+                <li>
+                    <a class="footer-nav__link" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="footer-nav__link item-style-active" href="portfolio-home.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a class="footer-nav__link" href="contact-me.html">CONTACT ME</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-item-list">
+            <ul class="footer-item-social">
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/Path-white.svg" alt="Logo de Github en blanc">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=fr" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/twitter-white.svg" alt="Logo de Twiter en blanc">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/lkdn-white.svg" alt="Logo de Linkedin en blanc">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>

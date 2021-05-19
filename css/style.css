@@ -2,4 +2,1029 @@
 {
     --font-primary: 'Ibarra Real Nova', sans-serif;
     --font-secondary: 'Public Sans', sans-serif;
+    --btn-primary-normal: #203A4C;
+    --btn-primary-hover: #5FB4A2;
+    --btn-secondary-normal: #fff;
+    --btn-secondary-hover: #33323D;
 }
+
+
+.container 
+{
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+}
+
+body
+{
+    background-color: #FAFAFA;
+}
+/* *************** GENERIC CLASS *************** */
+
+
+h1
+{
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+
+h2
+{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+h3
+{
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+
+p
+{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    color: rgba(51,50,61,0.8);
+    line-height: 1.875rem;
+}
+
+
+a
+{
+    letter-spacing: 0.125rem;
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+
+label
+{
+    font-size: 0.8125rem;
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+
+.btn-primary
+{
+    color: white;
+    background-color: #203A4C;
+    padding: 1.2rem 2.2rem 1.05rem 2.2rem;
+    position: absolute;    
+}
+
+
+.btn-primary::before
+{
+    position: relative;
+    content: url(/img/desktop/logo/btn.svg);
+    top: -.1rem;
+    left: -2.2rem;
+    background-color : rgba(0,0,0,0.1);
+    padding: 1.1rem 1rem 1.15rem 1rem;
+}
+
+
+.btn-primary:hover, .btn-primary:focus
+
+{
+    background-color: #5FB4A2;
+}
+
+
+.btn-primary:hover::before, .btn-primary:focus::before
+
+{
+    content: url(/img/desktop/logo/btn-white.svg);
+}
+
+
+.btn-primary-dissabled
+{
+    color: white;
+    background-color: #203A4C;
+    opacity: 10%;
+    padding: 1.2rem 2.2rem 1.05rem 2.2rem;
+    position: absolute;
+    cursor: not-allowed;
+}
+
+.btn-secondary
+{
+    
+    color: #33323D;
+    border: 1px solid #33323D;
+    padding: 1.1875rem 2.125rem 0.9375rem 2rem;
+}
+
+
+.btn-secondary:hover, .btn-secondary:focus
+
+{
+    color: #FAFAFA;
+    background-color: #33323D;
+}
+
+
+/* *************** HEADER *************** */
+
+/* *************** NAV *************** */
+
+
+.main-header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 3.375rem;
+}
+
+
+.main-nav__toggler 
+{
+    display: none;
+}
+
+
+.main-nav__list 
+{
+    display: flex;
+}
+
+
+.item-style-active a
+{
+    color: #5FB4A2 !important;
+}
+
+
+.main-nav__list a
+{
+    padding: 1rem 0 1rem 1rem;
+    margin-left: 1.625rem;
+    color: #33323D;
+}
+
+
+/* *************** FIN NAV *************** */
+
+
+.hero
+{
+    position: relative;
+}
+
+
+.hero img
+{
+    min-width: 100%;
+}
+
+
+.hero-img-tablette
+{
+    display: none;
+}
+
+
+.hero-img-mobile
+{
+    display: none;
+}
+
+
+
+.hero h1
+{
+    bottom: 2.3rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    letter-spacing: -.45px;
+    font-size: 3.125rem;
+    background-color: #FAFAFA;
+    color: #33323D;
+    padding: 3.625rem 3.4375rem 5.375rem 0rem;
+    line-height: 3.125rem;
+}
+
+.btn-hero
+{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.hero-text
+{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* *************** SECTION ABOUT ME *************** */
+
+
+.cards
+{
+    display: flex;
+    padding-top: 9.375rem;
+    padding-bottom: 9.625rem;
+    justify-content: left;
+}
+
+
+.cards div
+{
+    margin-left: 7.8125rem;
+    margin-right: 5.9375rem;
+    border-top: 1px solid rgba(51,50,61,0.1);
+    border-bottom: 1px solid rgba(51,50,61,0.1);
+}
+
+
+.cards div h2
+{
+    padding-top: 3.4375rem;
+    padding-bottom: 1.375rem;
+}
+
+
+.cards div p
+{
+    max-width: 21.875rem;
+    font-size: 1rem;
+    margin-bottom: 1.425rem;
+    line-height: 1.875rem;
+}
+
+
+.about-me-img-tablette
+{
+    display: none;
+}
+
+
+.about-me-img-mobile
+{
+    display: none;
+}
+
+
+/* *************** SECTION  CONTACT *************** */
+
+
+.main-contact
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.625rem;
+}
+
+
+.main-contact p
+{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    letter-spacing: -.36px;
+    font-size: 2.5rem;
+    max-width: 21.875rem;
+    color: #33323D;
+    line-height: 2.625rem;
+}
+
+
+.contact-item-line
+{
+    margin-top: 3.5rem;
+    border-top: 1px solid rgba(51,50,61,0.1);
+    min-width : 45%;  
+}
+
+
+.btn-home
+{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+/* *************** FOOTER *************** */
+
+
+.main-footer
+{
+    background-color: #33323D;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-footer ul
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.footer-item-list
+{
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+
+.footer-item-nav a
+{
+    color: #FFFFFF;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+
+.footer-item-social a img
+{
+    padding-right: 1rem;
+    padding-top: .3rem;
+}
+
+
+/* *************** HOVER *************** */
+
+
+.main-nav__link:hover,.main-nav__link:focus, .footer-nav__link:hover
+{
+    color: #5FB4A2;
+}
+
+
+.hover-social:hover
+
+{
+    transform: scale(1.3);
+    transition-duration: .4s;
+
+}
+
+
+/* *************** VERSION TABLETTE *************** */
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container 
+    {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+
+/* *************** HEADER *************** */
+
+
+    .hero h1
+    {
+        font-size: 2.5rem;
+        padding: 3.75rem 3.5rem 5.25rem 0rem;
+        line-height: 2.625rem;
+    }
+
+
+    .hero-img-desktop
+    {
+        display: none;
+    }
+
+
+    .hero-img-tablette
+    {
+        display: initial;
+    }
+
+
+    .hero-img-mobile
+    {
+        display: none;
+    }
+
+
+    .hero-text
+    {
+    position: absolute;
+    bottom: 0;
+    margin-right: 300px;
+    }
+
+
+/* *************** ABOUT ME *************** */
+
+    .about-me-img-desktop
+    {
+        display: none;
+    }
+
+
+    .about-me-img-tablette
+    {
+        display: initial;
+    }
+
+
+    .about-me-img-mobile
+    {
+        display: none;
+    }
+
+    
+    .cards
+    {
+        padding-top: 6rem;
+        padding-bottom: 6.25rem;
+    }
+
+
+    .cards div
+    {
+        margin-left: 4.3125rem;
+        margin-right: 0;
+        border-top: 1px solid rgba(51,50,61,0.1);
+        border-bottom: 1px solid rgba(51,50,61,0.1);
+    }
+
+
+    .cards div h2
+    {
+        padding-top: 3.4375rem;
+        padding-bottom: 1.375rem;
+    }
+
+
+    .cards div p
+    {
+        max-width: 21.875rem;
+        font-size: 1rem;
+        line-height: 1.875rem;
+    }
+
+/* *************** SECTION  CONTACT *************** */
+
+
+    .main-contact
+    {
+        margin-bottom: 4.75rem;
+    }
+
+
+    .main-contact p
+    {
+        max-width: 21.875rem;
+        line-height: 3rem;
+        color: #33323D;
+    }
+
+
+    .contact-item-line
+    {
+        margin-top: 3rem;
+        min-width : 25%;  
+    }
+
+/* *************** FOOTER *************** */
+
+
+    .footer-item-nav a
+    {
+        margin-left: 1rem;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .footer-item-social a img
+    {
+        padding-right: 1rem;
+    }
+}
+
+
+/* *************** VERSION MOBILE *************** */
+
+
+@media screen and (max-width: 767px) {
+
+
+    .container 
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+/* *************** HEADER *************** */
+
+/* *************** NAV *************** */
+
+
+    .main-nav__toggler 
+    {
+        display: grid;
+        gap: .3rem;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+    }
+    
+    .main-nav__bar 
+    {
+        width: 1.6rem;
+        height: 0.2rem;
+        background-color: #33323D;
+        transition: .3s;
+    }
+    
+    .main-nav__bar:first-child 
+    {
+        transform-origin: 1.1px 0px;
+    }
+    
+    .main-nav__bar:last-child 
+    {
+        transform-origin: left bottom;
+    }
+    
+    .main-nav__toggler[aria-expanded="true"] .main-nav__bar:first-child 
+    {
+        transform: rotate(45deg);
+    }
+    
+    .main-nav__toggler[aria-expanded="true"] .main-nav__bar:not(:first-child):not(:last-child) 
+    {
+        opacity: 0;
+    }
+    
+    .main-nav__toggler[aria-expanded="true"] .main-nav__bar:last-child 
+    {
+        transform: rotate(-45deg);
+    }
+    
+    .main-nav__list 
+    {
+        position: absolute;
+        z-index: 100;
+        top: 9rem;
+        right: 2.8rem;
+        display: block;
+        background-color: #33323D;
+        transition: .3s;
+        transform: translateX(-600%);
+        width: 16rem;
+    }
+    
+    .main-nav__toggler[aria-expanded="true"] + .main-nav__list 
+    {
+        transform: translateX(0);
+    }
+    
+    .main-nav__link 
+    {
+        display: block;
+        padding: 1.6rem 2rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white !important;
+        text-align: center;
+        text-decoration: none;
+        transition: .3s;
+    }
+    
+    .main-nav__link:hover,
+    .main-nav__link:focus 
+    {
+        color: #fff;
+        background-color: var(--primary);
+    }
+
+
+    .main-nav__list a
+    {
+        padding: 1rem 0 1rem 0rem;
+        margin-left: 0;
+    }
+
+
+    .main-nav__list li:first-child
+    {
+        margin-top: 2.625rem;
+    }
+
+
+    .main-nav__list li:last-child
+    {
+        margin-bottom: 2.375rem;
+    }
+
+
+
+    .main-header
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 3.375rem;
+    }
+
+
+/* *************** FIN NAV *************** */
+
+
+    .hero
+    {
+        position: relative;
+        margin-bottom: 2.75rem;
+    }
+
+
+    .hero img
+    {
+        min-width: 100%;
+        margin-bottom: 22rem;
+    }
+
+
+    .btn-hero
+    {
+        position: absolute;
+        bottom: 1rem;
+    }
+
+
+    .hero-text
+    {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .hero h1
+    {
+    font-size: 2.5rem;
+    padding: 0 0 5.375rem 0rem;
+    line-height: 3.125rem;
+    }
+
+
+    .hero-img-desktop
+    {
+        display: none;
+    }
+
+
+    .hero-img-tablette
+    {
+        display: none;
+    }
+
+
+    .hero-img-mobile
+    {
+        display: initial;
+    }
+        
+
+    /* *************** SECTION ABOUT ME *************** */
+
+
+    .cards
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3.375rem;
+        padding-bottom: 7.4375rem;
+        justify-content: initial;
+    }
+
+
+    .cards img
+    {
+        margin-bottom: 2rem;
+        min-width: 100%;
+    }
+    
+
+    .about-me-img-desktop
+    {
+        display: none;
+    }
+
+
+    .about-me-img-tablette
+    {
+        display: none;
+    }
+
+    .about-me-img-mobile
+    {
+        display: initial;
+    }
+
+
+    .hero-text
+    {
+        position: absolute;
+        bottom: 0;
+    }
+
+    
+    .cards div
+    {
+        margin-left: 0;
+        margin-right: 0;
+        border-top: 1px solid rgba(51,50,61,0.1);
+        border-bottom: 1px solid rgba(51,50,61,0.1);
+        position: relative;
+    }
+
+
+    .cards div h2
+    {
+        padding-top: 2.3125rem;
+        padding-bottom: 1.375rem;
+    }
+
+
+    .cards div p
+    {
+        font-size: 1rem;
+        padding-bottom: 7.8rem;
+        min-width: 100%;
+    }
+
+
+    .btn-portfolio
+    {
+        position: absolute;
+        bottom: 2rem;
+    }
+
+
+/* *************** SECTION  CONTACT *************** */
+
+
+    .main-contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:initial;
+        margin-bottom: 5rem;
+    }
+
+
+    .main-contact p
+    {
+        font-size: 2.5rem;
+        min-width: 100%;
+        color: #33323D;
+        line-height: 2.625rem;
+        text-align: center;
+        margin-bottom: 1.75rem;
+    }
+
+
+    .contact-item-line
+    {
+        display: none;
+    }
+
+
+    .btn-home
+    {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        max-width: 10.125rem;
+        margin: auto;
+    }
+
+/* *************** FOOTER *************** */
+
+
+    .main-footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .main-footer ul
+    {
+        display: flex;
+        align-items: initial;
+    }
+
+    
+    .footer-item-list:first-child img
+    {
+        margin-top: 3.5rem;
+    }
+
+
+    .footer-item-list:last-child img
+    {
+        margin-left: 1rem;
+    }
+
+
+    .footer-item-list
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+
+    .footer-item-list img
+    {
+        padding-bottom: 2.625rem;
+    }
+
+
+    .footer-item-nav 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .footer-item-nav li
+    {
+        padding: 1rem;
+    }
+
+
+    .footer-item-nav a
+    {
+        color: #FFFFFF;
+        margin: auto;
+    }
+}
+
+
+    /* *************** LARGE DEVICE *************** */
+
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+        .container 
+    {
+        padding-left:  6rem;
+        padding-right: 6rem;
+    }
+
+
+    /* *************** SECTION ABOUT ME *************** */
+
+
+    .cards div h2
+    {
+        padding-top: 2.4375rem;
+    }
+
+
+    .about-me-img-tablette
+    {
+        display: initial;
+    }
+
+
+    .about-me-img-desktop
+    {
+        display: none;
+    }
+
+
+    .cards div
+    {
+        margin-left: none;
+        margin-right: none;
+        border-top: 1px solid rgba(51,50,61,0.1);
+        border-bottom: 1px solid rgba(51,50,61,0.1);
+        padding-bottom: 3rem;
+    }
+
+
+    .cards figure img
+    {
+        height: 100%;
+    }
+
+
+    .cards div p
+    {
+        max-width: 21rem;
+        font-size: 1rem;
+        margin-bottom: 2.425rem;
+        line-height: 1.875rem;
+    }
+
+
+    /* *************** SECTION  CONTACT *************** */
+
+
+    .contact-item-line
+    {
+
+        min-width : 35%;  
+    }
+
+
+    .btn-home
+    {
+        margin-left: .5rem;
+    }
+} 
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+
+    .container 
+    {
+        padding-left:  6rem;
+        padding-right: 6rem;
+    }
+
+
+    /* *************** SECTION ABOUT ME *************** */
+
+
+    .cards div h2
+    {
+        padding-top: 2.4375rem;
+    }
+
+
+    .about-me-img-tablette
+    {
+        display: none;
+    }
+
+
+    .about-me-img-desktop
+    {
+        display: initial;
+    }
+
+
+    .cards div
+    {
+        margin-left: none;
+        margin-right: none;
+        border-top: 1px solid rgba(51,50,61,0.1);
+        border-bottom: 1px solid rgba(51,50,61,0.1);
+        padding-bottom: 3rem;
+    }
+
+
+    .cards figure img
+    {
+        height: 100%;
+    }
+
+
+    .cards div p
+    {
+        max-width: 21rem;
+        font-size: 1rem;
+        margin-bottom: 2.425rem;
+        line-height: 1.875rem;
+    }
+
+
+    /* *************** SECTION  CONTACT *************** */
+
+
+    .contact-item-line
+    {
+
+        min-width : 35%;  
+    }
+
+
+    .btn-home
+    {
+        margin-left: .5rem;
+    }
+}
+

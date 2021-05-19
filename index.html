@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/desktop/logo/logo-black.svg"/>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,8 +13,116 @@
     <title>Portfolio</title>
 </head>
 <body>
-  
 
-    
+<!-- ********** HEADER + NAV ********** -->
+
+    <header class="container">
+        <div class="main-header">
+            <div>
+                <div class="logo">
+                    <a href="index.html"><img src="img/desktop/logo/logo-black.svg" alt="Logo du site en noir"></a>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <button class="main-nav__toggler" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                    <span class="main-nav__bar"></span>
+                    <span class="main-nav__bar"></span>
+                    <span class="main-nav__bar"></span>
+                </button>
+                <ul class="main-nav__list" id="menu" hidden>
+                    <li class="main-nav__item item-style-active"><a href="index.html" class="main-nav__link">HOME</a></li>
+                    <li class="main-nav__item"><a href="portfolio-home.html" class="main-nav__link">PORTFOLIO</a></li>
+                    <li class="main-nav__item"><a href="contact-me.html" class="main-nav__link">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <figure>
+                <img class="hero-img-desktop" src="img/desktop/home-page/hero/Bitmap.png" srcset="img/desktop/home-page/hero/Bitmap@2x.png 2x" alt="Écran d'ordinateur portable avec une page web qui s'appelle Manage dedans" loading="lazy">
+                <img class="hero-img-tablette" src="img/tablette/home-page/hero/Bitmap.png" alt="Écran d'ordinateur portable avec une page web qui s'appelle Manage dedans" loading="lazy">
+                <img class="hero-img-mobile" src="img/mobile/home-page/hero/Bitmap.png" alt="Écran d'ordinateur portable avec une page web qui s'appelle Manage dedans" loading="lazy">
+            </figure>
+            <div class="hero-text">
+                <h1>
+                    Hey, I’m Alex <br> Spencer and I <br> love building <br> beautiful websites
+                </h1>
+                <a href="#aboutme" class="btn-primary btn-hero">ABOUT ME</a>
+            </div>
+        </div>
+    </header>
+
+<!-- ********** SECTION "ABOUT ME" ********** -->  
+
+    <main>
+        <section class="cards container" id="aboutme">
+            <figure>
+                <img class="about-me-img-desktop" src="img/desktop/home-page/portrait/Bitmap.png" srcset="img/desktop/home-page/portrait/Bitmap@2x.png 2x" alt="Portrait d'un jeune homme de côté" loading="lazy">
+                <img class="about-me-img-tablette" src="img/tablette/home-page/portrait/Bitmap.png" alt="Portrait d'un jeune homme de côté" loading="lazy">
+                <img class="about-me-img-mobile" src="img/mobile/home-page/portrait/Bitmap.png" alt="Portrait d'un jeune homme de côté" loading="lazy">
+            </figure>
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+                </p>
+                <a href="portfolio-home.html" class="btn-secondary btn-portfolio">GO TO PORTFOLIO</a>
+            </div>
+        </section>
+
+    <!-- ********** SECTION "CONTACT" ********** -->
+
+        <section class="main-contact container">
+            <div>
+                <p>
+                    Interested in doing a project together?
+                </p>
+            </div>
+            <div class="contact-item-line"></div>
+            <a href="contact-me.html" class="btn-secondary btn-home">CONTACT ME</a>
+            
+        </section>
+    </main>
+<!-- ********** FOOTER ********** -->
+
+    <footer class="main-footer container">
+        <div class="footer-item-list">
+            <a href="index.html"><img src="img/desktop/logo/logo-white.svg" alt="Logo du site en blanc"></a>
+            <ul class="footer-item-nav">
+                <li>
+                    <a class="footer-nav__link" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="footer-nav__link" href="portfolio-home.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a class="footer-nav__link" href="contact-me.html">CONTACT ME</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-item-list">
+            <ul class="footer-item-social">
+                <li>
+                    <a href="https://github.com/" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/Path-white.svg" alt="Logo de Github en blanc">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=fr" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/twitter-white.svg" alt="Logo de Twiter en blanc">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <img class="hover-social" src="img/desktop/social-network/lkdn-white.svg" alt="Logo de Linkedin en blanc">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="js/nav.js"></script>
 </body>
 </html>
