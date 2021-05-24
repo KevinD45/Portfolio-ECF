@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="img/desktop/logo/logo-black.svg"/>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact-me.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-me.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;700&display=swap" rel="stylesheet">
@@ -79,21 +79,24 @@
                 <h2>Contact Me</h2>
             </div>
             <div>
-                <form action="https://formspree.io/f/mzbyeyqr" method="POST">
+                <form action="https://formspree.io/f/mzbyeyqr" method="POST" id="formulaire">
                     <div class="formulaire-content">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name" placeholder="Jane Appleseed" required>
+                        <input type="text" id="name" name="user_name" placeholder="Jane Appleseed">
+                        <span id="error-name"></span>
                     </div>
                     <div class="formulaire-content">
                         <label for="mail">Email Address</label>
-                        <input type="email" id="mail" name="user_mail" placeholder="email@example.com" required>
+                        <input type="email" id="mail" name="user_mail" placeholder="email@example.com">
+                        <span id="error-mail"></span>
                     </div>
                     <div class="formulaire-content">
                         <label for="msg">Message</label>
-                        <textarea id="msg" name="user_message" placeholder="How can I help?" required></textarea>
+                        <textarea id="msg" name="user_message" placeholder="How can I help?"></textarea>
+                        <span id="error-msg"></span>
                     </div>
                     <div>
-                        <input class="btn-primary input-style" type="submit" value="SEND MESSAGE">
+                        <button  class="btn-primary">SEND MESSAGE</button>
                     </div>
                 </form>
             </div>
@@ -138,8 +141,7 @@
         </div>
     </footer>
 
-
-
     <script src="js/nav.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

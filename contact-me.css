@@ -17,6 +17,19 @@
 }
 
 
+.btn-primary:focus::before
+{
+    content: none;
+}
+
+
+.btn-primary:disabled
+{
+    opacity: 15%;
+}
+
+
+
 /* ********** SECTION ********** */
 
 
@@ -85,6 +98,7 @@
     
 }
 
+
 input, textarea
 {
     border: none;
@@ -92,23 +106,25 @@ input, textarea
     border-radius: 3px;
 }
 
+
 ::placeholder
 {
     color: rgba(0,0,0,0.4);
-    padding-left: 1rem;
-
 }
+
 
 input
 {
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
 }
+
 
 textarea
 {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     margin-bottom: 1.5rem;
+    resize: none;
 }
 
 
@@ -137,6 +153,7 @@ textarea
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
 
     .main-section
     {
@@ -175,6 +192,7 @@ textarea
         padding-right: 2.4375rem;
     }
 
+    
     .main-section
     {
         display: grid;
@@ -201,4 +219,6 @@ textarea
         margin-bottom: 0;
     }
 }
+
+
 

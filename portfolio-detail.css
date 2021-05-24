@@ -6,9 +6,11 @@ p
 
 h3
 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     letter-spacing: -.23px;
+    margin-top: 5.6rem;
 }
+
 
 /* ********** HEADER ********** */
 
@@ -101,6 +103,12 @@ h3
 }
 
 
+.second-content-img h3
+{
+    margin-top: 3rem;
+}
+
+
 .second-content-portfolio p a
 {
     color: rgba(51,50,61,0.8);
@@ -187,7 +195,7 @@ h3
 
 .arrow-content a:first-child
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.25rem;
     letter-spacing: -.29px;
     color: rgba(51,50,61);
@@ -200,20 +208,29 @@ h3
     color: rgba(51,50,61,0.5);
     font-size: 1rem;
     line-height: 1.875rem;
-    min-width: 30rem;
+}
+
+
+.arrow-content a
+{
+    display: block;
+}
+
+
+.arrow-content span a
+{
+    font-family: var(--font-secondary) !important;
 }
 
 
 .arrow-content-txt-second
 {
-    min-width: fit-content;
     text-align: right;
 }
 
 
 .arrow-content-txt-first
 {
-    min-width: fit-content;
     text-align: left;
 }
 

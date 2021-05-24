@@ -108,19 +108,27 @@ label
 }
 
 
-.btn-primary-dissabled
+.btn-primary-disabled
 {
     color: white;
     background-color: #203A4C;
-    opacity: 10%;
+    opacity: 15%;
     padding: 1.2rem 2.2rem 1.05rem 2.2rem;
     position: absolute;
+    
+}
+
+
+.btn-primary-disabled:hover, .btn-primary-disabled:focus
+
+{
+    background-color:#203A4C;
     cursor: not-allowed;
 }
 
+
 .btn-secondary
 {
-    
     color: #33323D;
     border: 1px solid #33323D;
     padding: 1.1875rem 2.125rem 0.9375rem 2rem;
@@ -133,6 +141,21 @@ label
     color: #FAFAFA;
     background-color: #33323D;
 }
+
+
+.btn-secondary-disabled
+{
+    color: #33323D;
+    border: 1px solid #33323D;
+    padding: 1.1875rem 2.125rem 0.9375rem 2rem;
+    opacity: 15%;
+}
+
+.btn-secondary-disabled:hover
+{
+    cursor: not-allowed;
+}
+
 
 
 /* *************** HEADER *************** */
