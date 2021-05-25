@@ -263,6 +263,7 @@ label
     padding-top: 9.375rem;
     padding-bottom: 9.625rem;
     justify-content: left;
+    max-width: 1440px;
 }
 
 
@@ -344,9 +345,15 @@ label
 /* *************** FOOTER *************** */
 
 
-.main-footer
+footer
 {
     background-color: #33323D;
+
+}
+
+
+.main-footer
+{
     display: flex;
     justify-content: space-between;
 }

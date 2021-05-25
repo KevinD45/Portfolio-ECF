@@ -4,6 +4,14 @@
     height: initial;
 }
 
+
+.main-page
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
 /* <!-- ********** SECTION CARDS ********** --> */
 
 
@@ -176,34 +184,3 @@
         align-items: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px)
-
-@media only screen and (min-width: 992px) and (max-width: 1200px)
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px)
