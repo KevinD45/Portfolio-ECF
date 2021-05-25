@@ -44,11 +44,13 @@
     padding-top: 3.25rem;
 }
 
+
 .first-section-content
 {
     grid-column-start: 2;
     grid-row-start: 1;
 }
+
 
 .first-section-title
 {
@@ -180,7 +182,12 @@ textarea
     .first-section-social
     {
         margin-bottom: 0;
+        grid-column-start: 1;
+        grid-row-start: 3;
     }
+
+
+
 }
 
 
@@ -218,6 +225,8 @@ textarea
     .first-section-social
     {
         margin-bottom: 0;
+        grid-column-start: 1;
+        grid-row-start: 3;
     }
 }
 
