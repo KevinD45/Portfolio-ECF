@@ -67,6 +67,7 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    grid-column-start: 2;
 }
 
 
